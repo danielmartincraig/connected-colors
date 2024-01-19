@@ -1,0 +1,8425 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Connecting using "deps.edn + shadow-cljs" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Starting Jack-in Terminal: pushd /home/danielcraig/Repos/flood-fill-technic-parts ; clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"1.0.0"},cider/cider-nrepl {:mvn/version,"0.28.5"}}}' -M:dev -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware shadow.cljs.devtools.server.nrepl/middleware]" ; popd
+; Using host:port localhost:39881 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+clj꞉user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: deps.edn + shadow-cljs...
+;   The Calva Connection Log might have more connection progress information.
+; Starting cljs repl for: deps.edn + shadow-cljs...
+; shadow-cljs - HTTP server available at http://localhost:8080
+; [:app] Configuring build.
+; [:app] Compiling ...
+; [:app] Build completed. (416 files, 3 compiled, 0 warnings, 68.56s)
+; Cljs builds started
+; Please start your ClojureScript app (load it in the browser, or whatever is appropriate) so that Calva can connect to its REPL...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Waiting for Shadow CLJS runtimes, start your CLJS app...
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+nil
+cljs꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+cljs꞉user꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.76s)
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 8.33s)
+cljs꞉app.subs꞉> 
+0   0
+0   1
+0   2
+0   3
+0   4
+0   5
+0   6
+0   7
+1   0
+1   1
+1   2
+1   3
+1   4
+1   5
+1   6
+1   7
+2   0
+2   1
+2   2
+2   3
+2   4
+2   5
+2   6
+2   7
+3   0
+3   1
+3   2
+3   3
+3   4
+3   5
+3   6
+3   7
+4   0
+4   1
+4   2
+4   3
+4   4
+4   5
+4   6
+4   7
+5   0
+5   1
+5   2
+5   3
+5   4
+5   5
+5   6
+5   7
+6   0
+6   1
+6   2
+6   3
+6   4
+6   5
+6   6
+6   7
+7   0
+7   1
+7   2
+7   3
+7   4
+7   5
+7   6
+7   7
+(nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ ...)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:18:5
+; --------------------------------------------------------------------------------
+;   15 | 
+;   16 | (defn scan [image]
+;   17 |   (let [dimension (matrix/dimension image)]
+;   18 |     (for [i (range dimension)
+; -----------^--------------------------------------------------------------------
+; null
+; Wrong number of args (3) passed to: cljs.core/for
+; --------------------------------------------------------------------------------
+;   19 |           j (range dimension)]
+;   20 |       (println i " " j)
+;   21 |       (get-in image [i j]))))
+;   22 | 
+; --------------------------------------------------------------------------------
+; 
+nil
+; ------ REPL Error while processing ---------------------------------------------
+; (defn scan [image]
+;   (let [dimension (matrix/dimension image)]
+;     (for [i (range dimension)
+;           j (range dimension)]
+;       (println i " " j)
+;       (get-in image [i j]))))
+; no source by provide: app.subs
+; {:provide app.subs}
+; ExceptionInfo: no source by provide: app.subs
+; 	shadow.build.data/get-source-id-by-provide (data.clj:192)
+; 	shadow.build.data/get-source-id-by-provide (data.clj:187)
+; 	shadow.build.data/get-source-by-provide (data.clj:195)
+; 	shadow.build.data/get-source-by-provide (data.clj:194)
+; 	shadow.cljs.repl/repl-compile/fn--19388/fn--19389 (repl.clj:512)
+; 	shadow.cljs.repl/repl-compile/fn--19388 (repl.clj:488)
+; 	shadow.cljs.repl/repl-compile (repl.clj:486)
+; 	shadow.cljs.repl/repl-compile (repl.clj:483)
+; 	shadow.cljs.repl/process-read-result (repl.clj:574)
+; 	shadow.cljs.repl/process-read-result (repl.clj:550)
+; 	shadow.cljs.repl/process-input (repl.clj:713)
+; 	shadow.cljs.repl/process-input (repl.clj:691)
+; 	shadow.cljs.devtools.server.worker.impl/eval19964/fn--19967 (impl.clj:698)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:234)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605/fn--19613 (util.clj:283)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605 (util.clj:282)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604 (util.clj:255)
+; 	java.lang.Thread.run (Thread.java:829)
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+nil
+; ------ REPL Error while processing ---------------------------------------------
+; (defn scan [image]
+;   (let [dimension (matrix/dimension image)]
+;     (for [i (range dimension)
+;           j (range dimension)]
+;       (do (println i " " j)
+;           (get-in image [i j])))))
+; no source by provide: app.subs
+; {:provide app.subs}
+; ExceptionInfo: no source by provide: app.subs
+; 	shadow.build.data/get-source-id-by-provide (data.clj:192)
+; 	shadow.build.data/get-source-id-by-provide (data.clj:187)
+; 	shadow.build.data/get-source-by-provide (data.clj:195)
+; 	shadow.build.data/get-source-by-provide (data.clj:194)
+; 	shadow.cljs.repl/repl-compile/fn--19388/fn--19389 (repl.clj:512)
+; 	shadow.cljs.repl/repl-compile/fn--19388 (repl.clj:488)
+; 	shadow.cljs.repl/repl-compile (repl.clj:486)
+; 	shadow.cljs.repl/repl-compile (repl.clj:483)
+; 	shadow.cljs.repl/process-read-result (repl.clj:574)
+; 	shadow.cljs.repl/process-read-result (repl.clj:550)
+; 	shadow.cljs.repl/process-input (repl.clj:713)
+; 	shadow.cljs.repl/process-input (repl.clj:691)
+; 	shadow.cljs.devtools.server.worker.impl/eval19964/fn--19967 (impl.clj:698)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:234)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605/fn--19613 (util.clj:283)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605 (util.clj:282)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604 (util.clj:255)
+; 	java.lang.Thread.run (Thread.java:829)
+; 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; ------ REPL Error while processing ---------------------------------------------
+; (cljs.core/load-file "/home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs")
+; ------ REPL Error while processing ---------------------------------------------
+; (ns app.subs
+;   (:require [re-frame.core :as rf]
+;             [emmy.env :as emmy :refer [*]]
+;             [emmy.matrix :as matrix]))
+; no source by id: [:shadow.build.classpath/resource "app/subs.cljs"]
+; {:id [:shadow.build.classpath/resource "app/subs.cljs"]}
+; ExceptionInfo: no source by id: [:shadow.build.classpath/resource "app/subs.cljs"]
+; 	shadow.build.data/get-source-by-id (data.clj:175)
+; 	shadow.build.data/get-source-by-id (data.clj:172)
+; 	shadow.build.compiler/remove-dead-js-deps/remove-fn--17691/fn--17692 (compiler.clj:1254)
+; 	clojure.core/complement/fn--5737 (core.clj:1455)
+; 	clojure.core/filter/fn--5962 (core.clj:2834)
+; 	clojure.lang.LazySeq.sval (LazySeq.java:42)
+; 	clojure.lang.LazySeq.seq (LazySeq.java:51)
+; 	clojure.lang.ChunkedCons.chunkedNext (ChunkedCons.java:59)
+; 	clojure.core/chunk-next (core.clj:710)
+; 	clojure.core.protocols/fn--8244 (protocols.clj:137)
+; 	clojure.core.protocols/fn--8244 (protocols.clj:124)
+; 	clojure.core.protocols/fn--8204/G--8199--8213 (protocols.clj:19)
+; 	clojure.core.protocols/seq-reduce (protocols.clj:31)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8178/G--8173--8191 (protocols.clj:13)
+; 	clojure.core/reduce (core.clj:6886)
+; 	clojure.core/into (core.clj:6958)
+; 	clojure.core/into (core.clj:6950)
+; 	shadow.build.compiler/remove-dead-js-deps/remove-fn--17691 (compiler.clj:1256)
+; 	clojure.core/update (core.clj:6231)
+; 	clojure.core/update (core.clj:6223)
+; 	shadow.build.compiler/remove-dead-js-deps/fn--17696/fn--17697 (compiler.clj:1262)
+; 	clojure.core/map/fn--5935 (core.clj:2770)
+; 	clojure.lang.LazySeq.sval (LazySeq.java:42)
+; 	clojure.lang.LazySeq.seq (LazySeq.java:51)
+; 	clojure.lang.RT.seq (RT.java:535)
+; 	clojure.core/seq--5467 (core.clj:139)
+; 	clojure.core.protocols/seq-reduce (protocols.clj:24)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8178/G--8173--8191 (protocols.clj:13)
+; 	clojure.core/reduce (core.clj:6886)
+; 	clojure.core/into (core.clj:6958)
+; 	clojure.core/into (core.clj:6950)
+; 	shadow.build.compiler/remove-dead-js-deps/fn--17696 (compiler.clj:1263)
+; 	clojure.core/update (core.clj:6231)
+; 	clojure.core/update (core.clj:6223)
+; 	shadow.build.compiler/remove-dead-js-deps (compiler.clj:1260)
+; 	shadow.build.compiler/remove-dead-js-deps (compiler.clj:1249)
+; 	shadow.build.compiler/compile-all (compiler.clj:1507)
+; 	shadow.build.compiler/compile-all (compiler.clj:1359)
+; 	shadow.build.api/compile-sources (api.clj:261)
+; 	shadow.build.api/compile-sources (api.clj:253)
+; 	shadow.build.api/compile-sources (api.clj:265)
+; 	shadow.build.api/compile-sources (api.clj:253)
+; 	shadow.cljs.repl/repl-ns (repl.clj:400)
+; 	shadow.cljs.repl/repl-ns (repl.clj:383)
+; 	shadow.cljs.repl/process-read-result (repl.clj:570)
+; 	shadow.cljs.repl/process-read-result (repl.clj:550)
+; 	shadow.cljs.repl/process-input (repl.clj:713)
+; 	shadow.cljs.repl/process-input (repl.clj:691)
+; 	shadow.cljs.repl/repl-load-file* (repl.clj:195)
+; 	shadow.cljs.repl/repl-load-file* (repl.clj:173)
+; 	shadow.cljs.repl/repl-load-file (repl.clj:231)
+; 	shadow.cljs.repl/repl-load-file (repl.clj:229)
+; 	shadow.cljs.repl/process-read-result (repl.clj:570)
+; 	shadow.cljs.repl/process-read-result (repl.clj:550)
+; 	shadow.cljs.repl/process-input (repl.clj:713)
+; 	shadow.cljs.repl/process-input (repl.clj:691)
+; 	shadow.cljs.devtools.server.worker.impl/eval19964/fn--19967 (impl.clj:698)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:234)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605/fn--19613 (util.clj:283)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605 (util.clj:282)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604 (util.clj:255)
+; 	java.lang.Thread.run (Thread.java:829)
+; 
+nil
+cljs꞉app.subs꞉> 
+nil
+; ------ REPL Error while processing ---------------------------------------------
+; (ns app.subs
+;   (:require [re-frame.core :as rf]
+;             [emmy.env :as emmy :refer [*]]
+;             [emmy.matrix :as matrix]))
+; no source by id: [:shadow.build.classpath/resource "app/subs.cljs"]
+; {:id [:shadow.build.classpath/resource "app/subs.cljs"]}
+; ExceptionInfo: no source by id: [:shadow.build.classpath/resource "app/subs.cljs"]
+; 	shadow.build.data/get-source-by-id (data.clj:175)
+; 	shadow.build.data/get-source-by-id (data.clj:172)
+; 	shadow.build.compiler/remove-dead-js-deps/remove-fn--17691/fn--17692 (compiler.clj:1254)
+; 	clojure.core/complement/fn--5737 (core.clj:1455)
+; 	clojure.core/filter/fn--5962 (core.clj:2834)
+; 	clojure.lang.LazySeq.sval (LazySeq.java:42)
+; 	clojure.lang.LazySeq.seq (LazySeq.java:51)
+; 	clojure.lang.ChunkedCons.chunkedNext (ChunkedCons.java:59)
+; 	clojure.core/chunk-next (core.clj:710)
+; 	clojure.core.protocols/fn--8244 (protocols.clj:137)
+; 	clojure.core.protocols/fn--8244 (protocols.clj:124)
+; 	clojure.core.protocols/fn--8204/G--8199--8213 (protocols.clj:19)
+; 	clojure.core.protocols/seq-reduce (protocols.clj:31)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8178/G--8173--8191 (protocols.clj:13)
+; 	clojure.core/reduce (core.clj:6886)
+; 	clojure.core/into (core.clj:6958)
+; 	clojure.core/into (core.clj:6950)
+; 	shadow.build.compiler/remove-dead-js-deps/remove-fn--17691 (compiler.clj:1256)
+; 	clojure.core/update (core.clj:6231)
+; 	clojure.core/update (core.clj:6223)
+; 	shadow.build.compiler/remove-dead-js-deps/fn--17696/fn--17697 (compiler.clj:1262)
+; 	clojure.core/map/fn--5935 (core.clj:2770)
+; 	clojure.lang.LazySeq.sval (LazySeq.java:42)
+; 	clojure.lang.LazySeq.seq (LazySeq.java:51)
+; 	clojure.lang.RT.seq (RT.java:535)
+; 	clojure.core/seq--5467 (core.clj:139)
+; 	clojure.core.protocols/seq-reduce (protocols.clj:24)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8236 (protocols.clj:75)
+; 	clojure.core.protocols/fn--8178/G--8173--8191 (protocols.clj:13)
+; 	clojure.core/reduce (core.clj:6886)
+; 	clojure.core/into (core.clj:6958)
+; 	clojure.core/into (core.clj:6950)
+; 	shadow.build.compiler/remove-dead-js-deps/fn--17696 (compiler.clj:1263)
+; 	clojure.core/update (core.clj:6231)
+; 	clojure.core/update (core.clj:6223)
+; 	shadow.build.compiler/remove-dead-js-deps (compiler.clj:1260)
+; 	shadow.build.compiler/remove-dead-js-deps (compiler.clj:1249)
+; 	shadow.build.compiler/compile-all (compiler.clj:1507)
+; 	shadow.build.compiler/compile-all (compiler.clj:1359)
+; 	shadow.build.api/compile-sources (api.clj:261)
+; 	shadow.build.api/compile-sources (api.clj:253)
+; 	shadow.build.api/compile-sources (api.clj:265)
+; 	shadow.build.api/compile-sources (api.clj:253)
+; 	shadow.cljs.repl/repl-ns (repl.clj:400)
+; 	shadow.cljs.repl/repl-ns (repl.clj:383)
+; 	shadow.cljs.repl/process-read-result (repl.clj:570)
+; 	shadow.cljs.repl/process-read-result (repl.clj:550)
+; 	shadow.cljs.repl/process-input (repl.clj:713)
+; 	shadow.cljs.repl/process-input (repl.clj:691)
+; 	shadow.cljs.devtools.server.worker.impl/eval19964/fn--19967 (impl.clj:698)
+; 	clojure.lang.MultiFn.invoke (MultiFn.java:234)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605/fn--19613 (util.clj:283)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604/fn--19605 (util.clj:282)
+; 	shadow.cljs.devtools.server.util/server-thread/fn--19604 (util.clj:255)
+; 	java.lang.Thread.run (Thread.java:829)
+; 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.27s)
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+0   0
+0   1
+0   2
+0   3
+0   4
+0   5
+0   6
+0   7
+1   0
+1   1
+1   2
+1   3
+1   4
+1   5
+1   6
+1   7
+; The previously used runtime disappeared. Will attempt to pick a new one when available but your state might be gone.
+cljs꞉app.subs꞉> 
+0   0
+0   1
+0   2
+0   3
+0   4
+0   5
+0   6
+0   7
+1   0
+1   1
+1   2
+1   3
+1   4
+1   5
+1   6
+1   7
+2   0
+2   1
+2   2
+2   3
+2   4
+2   5
+2   6
+2   7
+3   0
+3   1
+3   2
+3   3
+3   4
+3   5
+3   6
+3   7
+4   0
+4   1
+4   2
+4   3
+4   4
+4   5
+4   6
+4   7
+5   0
+5   1
+5   2
+5   3
+5   4
+5   5
+5   6
+5   7
+6   0
+6   1
+6   2
+6   3
+6   4
+6   5
+6   6
+6   7
+7   0
+7   1
+7   2
+7   3
+7   4
+7   5
+7   6
+7   7
+(0
+ -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ -1
+ -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ -1
+ -1
+ -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ -1
+ 0
+ -1
+ 0
+ -1
+ -1
+ -1
+ 0
+ -1
+ -1
+ -1
+ 0
+ 0
+ -1
+ ...)
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:6:10
+;  Use of undeclared Var app.subs/dfs
+; --------------------------------------------------------------------------------
+; 
+; 
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:6:10
+;  Use of undeclared Var app.subs/dfs
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+(nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ ...)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 3.63s)
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+(nil
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ -1
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ nil
+ -1
+ nil
+ -1
+ -1
+ -1
+ nil
+ -1
+ -1
+ -1
+ nil
+ nil
+ -1
+ ...)
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+(nil #object[emmy.structure.Matrix "[[0 3 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil)
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 3 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+(nil
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ -1
+ -1
+ nil
+ nil
+ nil
+ nil
+ nil
+ -1
+ nil
+ -1
+ nil
+ -1
+ -1
+ -1
+ nil
+ -1
+ -1
+ -1
+ nil
+ nil
+ -1
+ ...)
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+(nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ ...)
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+(nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ nil
+ ...)
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+(nil #object[emmy.structure.Matrix "[[0 3 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 3 3 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 3 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 3 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 3 3 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 3 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 3 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 3 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [3 3 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 3 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 3 3 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 3 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 3 3 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 3 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil nil nil nil nil nil)
+cljs꞉app.subs꞉> 
+#'app.subs/directions
+cljs꞉app.subs꞉> 
+#'app.subs/directions
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+(nil #object[emmy.structure.Matrix "[[0 3 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 3 3 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 3 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 3 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 3 3 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 3 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 3 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 3 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 3 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [3 3 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 3 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 3 0 -1 -1 -1 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 3 3 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 3 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 3 0] [0 -1 -1 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 3 3 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] #object[emmy.structure.Matrix "[[0 -1 0 0 0 0 0 0] [0 -1 -1 0 0 0 0 0] [0 0 0 -1 0 0 0 0] [0 0 0 0 -1 -1 -1 0] [0 0 0 0 -1 0 -1 0] [-1 -1 -1 0 -1 -1 -1 0] [0 -1 3 0 0 0 0 0] [0 0 0 0 0 0 0 0]]"] nil nil nil nil nil nil nil nil nil nil nil nil nil)
+cljs꞉app.subs꞉> 
+(((1 2 (3)) (4)) (1 2 (3)) 1 2 (3) 3 (4) 4)
+cljs꞉app.subs꞉> 
+#'app.subs/t
+cljs꞉app.subs꞉> 
+(((1 2 (3)) (4)) (1 2 (3)) 1 2 (3) 3 (4) 4)
+cljs꞉app.subs꞉> 
+10
+cljs꞉app.subs꞉> 
+(10)
+cljs꞉app.subs꞉> 
+([-1 -1] [-1 0] [-1 1] [0 -1] [0 1] [1 -1] [1 0] [1 1])
+cljs꞉app.subs꞉> 
+([-1 -1] [-1 0] [-1 1] [0 -1] [0 1] [1 -1] [1 0] [1 1])
+cljs꞉app.subs꞉> 
+(:d)
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; The previously used runtime disappeared. Will attempt to pick a new one when available but your state might be gone.
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+(((1 2 (3)) (4)) (1 2 (3)) 1 2 (3) 3 (4) 4)
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :invalid-arithmetic -------------------------------------------
+;  Resource: <eval>:3:7
+;  cljs.core/+, all arguments must be numbers, got [cljs.core/IVector any] instead
+; --------------------------------------------------------------------------------
+; 
+; 
+; ------ WARNING - :invalid-arithmetic -------------------------------------------
+;  Resource: <eval>:3:7
+;  cljs.core/+, all arguments must be numbers, got [cljs.core/IVector #{any clj-nil}] instead
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+(("0:NW" "0[-1 -1]")
+ ("0:N" "0[-1 0]")
+ ("0:NE" "0[-1 1]")
+ ("0:W" "0[0 -1]")
+ ("0:E" "0[0 1]")
+ ("0:SW" "0[1 -1]")
+ ("0:S" "0[1 0]")
+ ("0:SE" "0[1 1]"))
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+(("0:NW" "0[-1 -1]")
+ ("0:N" "0[-1 0]")
+ ("0:NE" "0[-1 1]")
+ ("0:W" "0[0 -1]")
+ ("0:E" "0[0 1]")
+ ("0:SW" "0[1 -1]")
+ ("0:S" "0[1 0]")
+ ("0:SE" "0[1 1]"))
+cljs꞉app.subs꞉> 
+#'app.subs/directions
+cljs꞉app.subs꞉> 
+((-1 -1) (-1 0) (-1 1) (0 -1) (0 1) (1 -1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+((0 0) (0 1) (0 2) (1 0) (1 2) (2 0) (2 1) (2 2))
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :invalid-arithmetic -------------------------------------------
+;  Resource: <eval>:1:1
+;  cljs.core/>, all arguments must be numbers, got [cljs.core/IVector number] instead
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+false
+cljs꞉app.subs꞉> 
+true
+cljs꞉app.subs꞉> 
+true
+cljs꞉app.subs꞉> 
+true
+cljs꞉app.subs꞉> 
+false
+cljs꞉app.subs꞉> 
+false
+cljs꞉app.subs꞉> 
+true
+cljs꞉app.subs꞉> 
+#object[Function]
+cljs꞉app.subs꞉> 
+((0 0) (0 1) (0 2) (1 0) (1 2) (2 0) (2 1) (2 2))
+cljs꞉app.subs꞉> 
+((0 1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+((0 0))
+cljs꞉app.subs꞉> 
+((0 1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+(2 3)
+cljs꞉app.subs꞉> 
+("1[0 0]" "2[1 1]")
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+("[1 2][0 0]" "[1 2][1 1]")
+cljs꞉app.subs꞉> 
+("[1 2]00" "[1 2]11")
+cljs꞉app.subs꞉> 
+((1 2) (2 3))
+cljs꞉app.subs꞉> 
+((1 2) (2 3))
+cljs꞉app.subs꞉> 
+((-1 -1) (-1 0) (-1 1) (0 -1) (0 1) (1 -1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:4:43
+;  Use of undeclared Var app.subs/image
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.42s)
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+((-1 -1) (-1 0) (-1 1) (0 -1) (0 1) (1 -1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+0
+cljs꞉app.subs꞉> 
+-1
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:2
+;  Use of undeclared Var app.subs/child-fn
+; --------------------------------------------------------------------------------
+; 
+; 
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:11
+;  Use of undeclared Var app.subs/root
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+-1
+cljs꞉app.subs꞉> 
+((-1 0) (-1 1) (-1 2) (0 0) (0 2) (1 0) (1 1) (1 2))
+cljs꞉app.subs꞉> 
+((-1 -1) (-1 0) (-1 1) (0 -1) (0 1) (1 -1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+(nil nil nil nil -1 nil 0 -1)
+cljs꞉app.subs꞉> 
+(nil nil nil nil -1 nil 0 -1)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 3.93s)
+cljs꞉app.subs꞉> 
+(nil nil nil nil -1 nil 0 -1)
+cljs꞉app.subs꞉> 
+((-1 -1) (-1 0) (-1 1) (0 -1) (0 1) (1 -1) (1 0) (1 1))
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+
+; The previously used runtime disappeared. Will attempt to pick a new one when available but your state might be gone.
+cljs꞉app.subs꞉> 
+((1 2) (2 3))
+cljs꞉app.subs꞉> 
+
+; The previously used runtime disappeared. Will attempt to pick a new one when available but your state might be gone.
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 14.37s)
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+((1 2) (2 3))
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 8.50s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.33s)
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:21
+;  Use of undeclared Var app.subs/c
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+
+; The previously used runtime disappeared. Will attempt to pick a new one when available but your state might be gone.
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+([0 0])
+cljs꞉app.subs꞉> 
+((1 2) (2 3) (0 3))
+cljs꞉app.subs꞉> 
+((0 0) (1 1) (-1 1))
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+((0 0) (1 1) (-1 1))
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :fn-arity -----------------------------------------------------
+;  Resource: <eval>:3:21
+;  Wrong number of args (1) passed to cljs.core/every?
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :fn-arity -----------------------------------------------------
+;  Resource: <eval>:3:21
+;  Wrong number of args (1) passed to cljs.core/every?
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+((0 0) (1 1))
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :fn-arity -----------------------------------------------------
+;  Resource: <eval>:3:42
+;  Wrong number of args (1) passed to cljs.core/every?
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+testing  [0 1]
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+testing  (0 1)
+testing  (1 1)
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+root is  [0 1]
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+root is  (0 1)
+root is  (1 1)
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.11s)
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+root is  [0 1]
+root is  (1 1)
+root is  (1 2)
+([0 1] (1 1) (2 1) (1 2) (2 2) (1 3) (0 2))
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.00s)
+cljs꞉app.subs꞉> 
+root is  [0 1]
+root is  (1 1)
+root is  (1 2)
+([0 1] (1 1) (2 1) (1 2) (2 2) (1 3) (0 2))
+cljs꞉app.subs꞉> 
+root is  [0 1]
+root is  (1 1)
+root is  (1 2)
+([0 1] (1 1) (2 1) (1 2) (2 2) (1 3) (0 2))
+cljs꞉app.subs꞉> 
+root is  [0 1]
+root is  [0 1]root is  [0 1]
+
+root is  [0 1]root is  [0 1]root is  [0 1]
+
+
+root is  [0 1]root is  [0 1]root is  [0 1]root is  [0 1]
+root is  (1 1)
+
+root is  (1 1)
+root is  (1 2)
+
+root is  (1 1)
+root is  (1 2)
+
+root is  (1 1)
+root is  (1 2)root is  (1 2)
+
+([0 1] (1 1) (1 2))
+cljs꞉app.subs꞉> 
+root is  [0 1]root is  [0 1]root is  [0 1]root is  [0 1]
+
+
+
+root is  (1 1)
+root is  (1 2)
+root is  (1 1)root is  (1 1)root is  (1 1)
+
+root is  (1 2)root is  (1 2)
+
+root is  (1 2)
+
+([0 1] (1 1) (1 2))
+cljs꞉app.subs꞉> 
+root is  [0 1]root is  [0 1]root is  [0 1]root is  [0 1]
+
+root is  (1 1)
+root is  (1 2)
+
+
+root is  (1 1)
+root is  (1 2)
+root is  (1 1)root is  (1 1)
+
+root is  (1 2)root is  (1 2)
+
+([0 1] (1 1) (1 2))
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))
+cljs꞉app.subs꞉> 
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+
+; INTERNAL REPL ERROR: Got an unexpected reply from relay, check Inspect
+; Timeout while waiting for result.
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+([2 3])
+cljs꞉app.subs꞉> 
+([3 4] (4 4))
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.39s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 1.32s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.49s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.73s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+nil
+; ------ REPL Error while processing ---------------------------------------------
+; (let [image @(rf/subscribe [:app/negated-image])
+;         (scan image)])
+; Syntax error macroexpanding cljs.core/let.
+; Call to cljs.core/let did not conform to spec.
+; -- Spec failed --------------------
+; 
+;   ([image @(rf/subscribe [:app/negated-image]) (scan image)])
+;    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+; 
+; should satisfy
+; 
+;   even-number-of-forms?
+; 
+; -- Relevant specs -------
+; 
+; :shadow.cljs.devtools.cljs-specs/bindings:
+;   (clojure.spec.alpha/and
+;    clojure.core/vector?
+;    shadow.cljs.devtools.cljs-specs/even-number-of-forms?
+;    (clojure.spec.alpha/* :shadow.cljs.devtools.cljs-specs/binding))
+; 
+; -------------------------
+; Detected 1 error
+; 
+cljs꞉app.subs꞉> 
+(nil
+ ([0 1] (1 1) (1 2))
+ nil
+ nil
+ nil
+ nil
+ ([1 1] (1 2))
+ ([1 2])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([2 3])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([3 4] (4 4))
+ nil
+ nil
+ nil
+ nil
+ ([4 4]))
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.65s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 10.71s)
+(nil
+ ([0 1] (1 1) (1 2))
+ nil
+ nil
+ nil
+ nil
+ ([1 1] (1 2))
+ ([1 2])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([2 3])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([3 4] (4 4))
+ nil
+ nil
+ nil
+ nil
+ ([4 4]))
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+(nil
+ ([0 1] (1 1) (1 2))
+ nil
+ nil
+ nil
+ nil
+ ([1 1] (1 2))
+ ([1 2])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([2 3])
+ nil
+ nil
+ nil
+ nil
+ nil
+ ([3 4] (4 4))
+ nil
+ nil
+ nil
+ nil
+ ([4 4]))
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 2 warnings, 9.99s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:33
+; --------------------------------------------------------------------------------
+;   19 |   (let [dimension (matrix/dimension image)]
+;   20 |     (dotimes [i (range dimension)
+;   21 |           j (range dimension)]
+;   22 |       (when (= (get-in image [i j]) -1)
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/j
+; --------------------------------------------------------------------------------
+;   23 |         (dfs image i j)))))
+;   24 | 
+;   25 | (comment
+;   26 |   (let [image (rf/subscribe [:app/negated-image])]
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:23:22
+; --------------------------------------------------------------------------------
+;   20 |     (dotimes [i (range dimension)
+;   21 |           j (range dimension)]
+;   22 |       (when (= (get-in image [i j]) -1)
+;   23 |         (dfs image i j)))))
+; ----------------------------^---------------------------------------------------
+;  Use of undeclared Var app.subs/j
+; --------------------------------------------------------------------------------
+;   24 | 
+;   25 | (comment
+;   26 |   (let [image (rf/subscribe [:app/negated-image])]
+;   27 |     (scan @image)) 
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.54s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.09s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 3.58s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:9:1
+; --------------------------------------------------------------------------------
+;    6 | (def directions
+;    7 |   [[1 0] [0 1]])
+;    8 | 
+;    9 | (defn [n] one? (= 1 n))
+; -------^------------------------------------------------------------------------
+; Syntax error macroexpanding cljs.core/defn.
+; Call to cljs.core/defn did not conform to spec.
+; -- Spec failed --------------------
+; 
+;   ([n] ... ...)
+;    ^^^
+; 
+; should satisfy
+; 
+;   simple-symbol?
+; 
+; -- Relevant specs -------
+; 
+; :shadow.cljs.devtools.cljs-specs/defn-args:
+;   (clojure.spec.alpha/cat
+;    :fn-name
+;    clojure.core/simple-symbol?
+;    :docstring
+;    (clojure.spec.alpha/? clojure.core/string?)
+;    :meta
+;    (clojure.spec.alpha/? clojure.core/map?)
+;    :fn-tail
+;    (clojure.spec.alpha/alt
+;     :arity-1
+;     :shadow.cljs.devtools.cljs-specs/params+body
+;     :arity-n
+;     (clojure.spec.alpha/cat
+;      :bodies
+;      (clojure.spec.al
+; pha/+
+;       (clojure.spec.alpha/spec
+;        :shadow.cljs.devtools.cljs-specs/params+body))
+;      :attr-map
+;      (clojure.spec.alpha/? clojure.core/map?))))
+; 
+; -------------------------
+; Detected 1 error
+; 
+; --------------------------------------------------------------------------------
+;   10 | 
+;   11 | (defn dfs [image components i j]
+;   12 |   (let [root [i j]
+;   13 |         child-fn (fn [root]
+; --------------------------------------------------------------------------------
+; 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:9:1
+; --------------------------------------------------------------------------------
+;    6 | (def directions
+;    7 |   [[1 0] [0 1]])
+;    8 | 
+;    9 | (defn [n] one? (= 1 n))
+; -------^------------------------------------------------------------------------
+; Syntax error macroexpanding cljs.core/defn.
+; Call to cljs.core/defn did not conform to spec.
+; -- Spec failed --------------------
+; 
+;   ([n] ... ...)
+;    ^^^
+; 
+; should satisfy
+; 
+;   simple-symbol?
+; 
+; -- Relevant specs -------
+; 
+; :shadow.cljs.devtools.cljs-specs/defn-args:
+;   (clojure.spec.alpha/cat
+;    :fn-name
+;    clojure.core/simple-symbol?
+;    :docstring
+;    (clojure.spec.alpha/? clojure.core/string?)
+;    :meta
+;    (clojure.spec.alpha/? clojure.core/map?)
+;    :fn-tail
+;    (clojure.spec.alpha/alt
+;     :arity-1
+;     :shadow.cljs.devtools.cljs-specs/params+body
+;     :arity-n
+;     (clojure.spec.alpha/cat
+;      :bodies
+;      (clojure.spec.al
+; pha/+
+;       (clojure.spec.alpha/spec
+;        :shadow.cljs.devtools.cljs-specs/params+body))
+;      :attr-map
+;      (clojure.spec.alpha/? clojure.core/map?))))
+; 
+; -------------------------
+; Detected 1 error
+; 
+; --------------------------------------------------------------------------------
+;   10 | 
+;   11 | (defn dfs [image components i j]
+;   12 |   (let [root [i j]
+;   13 |         child-fn (fn [root]
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.35s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 2.40s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 1.35s)
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.21s)
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.35s)
+cljs꞉app.subs꞉> 
+nil
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.72s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.18s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.11s)
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+entering dfs
+entering dfs
+caterpillar
+([0 1])
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+caterpillar
+([1 1])
+entering dfs
+caterpillar
+([1 2])
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+caterpillar
+([2 3])
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+caterpillar
+([3 4])
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+caterpillar
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+; Evaluating file: subs.cljs
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.88s)
+cljs꞉app.subs꞉> 
+entering dfsentering dfs
+
+caterpillar
+caterpillar([0 1])
+
+([0 1])entering dfs
+entering dfs
+
+caterpillarcaterpillar
+
+([1 1])([1 1])
+
+entering dfs
+caterpillar
+([1 2])
+entering dfs
+caterpillarentering dfs
+([2 3])
+
+caterpillar
+([1 2])
+entering dfs
+caterpillar
+([2 3])
+entering dfsentering dfs
+caterpillar
+caterpillar
+
+([3 4])([3 4])
+
+entering dfs
+entering dfscaterpillar
+
+([4 4])
+caterpillar
+([4 4])
+nil
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.46s)
+entering dfs
+([0 1])
+entering dfs
+([1 1])
+entering dfs
+([1 2])
+entering dfs
+([2 3])
+entering dfs
+([3 4])
+entering dfs
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+entering dfsentering dfs
+([0 1])
+entering dfs
+
+([0 1])
+entering dfs
+([1 1])([1 1])
+
+entering dfsentering dfs
+
+([1 2])([1 2])
+
+entering dfsentering dfs
+
+([2 3])([2 3])
+
+entering dfsentering dfs
+
+([3 4])([3 4])
+
+entering dfsentering dfs
+
+([4 4])([4 4])
+
+nil
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1])
+entering dfs
+([1 1])
+entering dfs
+([1 2])
+entering dfs
+([2 3])
+entering dfs
+([3 4])
+entering dfs
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+#'app.subs/scan
+cljs꞉app.subs꞉> 
+([0 1])
+([1 1])
+([1 2])
+([2 3])
+([3 4])
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+#'app.subs/dfs
+cljs꞉app.subs꞉> 
+([0 1])
+([1 1])
+([1 2])
+([2 3])
+([3 4])
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+nil
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1])
+entering dfs
+([1 1])
+entering dfs
+([1 2])
+entering dfs
+([2 3])
+entering dfs
+([3 4])
+entering dfs
+([4 4])
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 11.49s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+1
+1
+1
+1
+1
+1
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.97s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+3
+2
+1
+1
+2
+1
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.15s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+3
+2
+1
+1
+2
+1
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.70s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+3
+2
+1
+1
+2
+1
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.15s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))
+([1 1] (1 2))
+([1 2])
+([2 3])
+([3 4] (4 4))
+([4 4])
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.14s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 1.53s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.88s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.34s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.97s)
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.08s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.18s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.30s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.67s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.37s)
+cljs꞉app.subs꞉> 
+entering dfsentering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+#object[re_frame$subs$subs_handler_fn]
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 12.33s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 3.17s)
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+; Evaluating file: subs.cljs
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 11.68s)
+cljs꞉app.subs꞉> 
+entering dfsentering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+#object[re_frame$subs$subs_handler_fn]
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.69s)
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0] [0 0 0] [0 0 0]]"]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0] [0 3 0] [0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.88s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1] (1 1) (1 2))
+entering dfs
+([1 1] (1 2))
+entering dfs
+([1 2])
+entering dfs
+([2 3])
+entering dfs
+([3 4] (4 4))
+entering dfs
+([4 4])
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.43s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1] (1 1) (1 2))
+entering dfs
+([2 3])
+entering dfs
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.77s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.30s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 2.66s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 1.06s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.88s)
+cljs꞉app.subs꞉> 
+entering dfs
+#object[re_frame$subs$subs_handler_fn]
+:repl/exception!
+; 
+; Execution error (Error) at (<cljs repl>:1).
+; No protocol method IDeref.-deref defined for type number: 1
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.60s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+nil
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1] (1 1) (1 2))
+entering dfs
+([2 3])
+entering dfs
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+nil
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 19.42s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+entering dfs
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.78s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+entering dfs
+([0 1] (1 1) (1 2))
+entering dfs
+([2 3])
+entering dfs
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 2 warnings, 13.47s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:14:15
+; --------------------------------------------------------------------------------
+;   11 | 
+;   12 | (defn dfs [image components count root]
+;   13 |   (println "entering dfs")
+;   14 |   (let [root [i j]
+; ---------------------^----------------------------------------------------------
+;  Use of undeclared Var app.subs/i
+; --------------------------------------------------------------------------------
+;   15 |         child-fn (fn [root]
+;   16 |                    (filter (and (fn [c] (every? #(<= 0 % 4) c))
+;   17 |                                 (fn [c] (zero? (get-in @components c)))
+;   18 |                                 (fn [c] (= (get-in image c) 1)))
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:14:17
+; --------------------------------------------------------------------------------
+;   11 | 
+;   12 | (defn dfs [image components count root]
+;   13 |   (println "entering dfs")
+;   14 |   (let [root [i j]
+; -----------------------^--------------------------------------------------------
+;  Use of undeclared Var app.subs/j
+; --------------------------------------------------------------------------------
+;   15 |         child-fn (fn [root]
+;   16 |                    (filter (and (fn [c] (every? #(<= 0 % 4) c))
+;   17 |                                 (fn [c] (zero? (get-in @components c)))
+;   18 |                                 (fn [c] (= (get-in image c) 1)))
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 3.52s)
+; Evaluating file: subs.cljs
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 14.59s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.01s)
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))
+([2 3])
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; Exception in thread "async-dispatch-6" java.io.IOException: UT002002: Channel is closed
+; 	at io.undertow.websockets.core.WebSocketChannel.send(WebSocketChannel.java:343)
+; 	at io.undertow.websockets.core.WebSockets.sendBlockingInternal(WebSockets.java:992)
+; 	at io.undertow.websockets.core.WebSockets.sendBlockingInternal(WebSockets.java:986)
+; 	at io.undertow.websockets.core.WebSockets.sendTextBlocking(WebSockets.java:200)
+; 	at shadow.undertow$eval24895$fn$reify__24902$fn__25026$state_machine__12227__auto____25065$fn__25068.invoke(undertow.clj:468)
+; 	at shadow.undertow$eval24895$fn$reify__24902$fn__25026$state_machine__12227__auto____25065.invoke(undertow.clj:468)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:978)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:977)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:982)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:9
+; 80)
+; 	at clojure.core.async$ioc_alts_BANG_$fn__12474.invoke(async.clj:421)
+; 	at clojure.core.async$do_alts$fn__12405$fn__12408.invoke(async.clj:288)
+; 	at clojure.core.async.impl.channels.ManyToManyChannel$fn__6970$fn__6971.invoke(channels.clj:99)
+; 	at clojure.lang.AFn.run(AFn.java:22)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+; 	at clojure.core.async.impl.concurrent$counted_thread_factory$reify__6839$fn__6840.invoke(concurrent.clj:29)
+; 	at clojure.lang.AFn.run(AFn.java:22)
+; 	at java.base/java.lang.Thread.run(Thread.java:829)
+; Exception in thread "async-dispatch-7" java.io.IOException: UT002002: Channel is closed
+; 	at io.undertow.websockets.core.WebSocketChannel.send(WebSocketChannel.java:343)
+; 	at io.undertow.websockets.core.WebSockets.sendBlockingInternal(WebSockets.java:992)
+; 	at io.undertow.websockets.core.WebSockets.sendBlockingInternal(WebSockets.java:986)
+; 	at io.undertow.
+; websockets.core.WebSockets.sendTextBlocking(WebSockets.java:200)
+; 	at shadow.undertow$eval24895$fn$reify__24902$fn__25026$state_machine__12227__auto____25065$fn__25068.invoke(undertow.clj:468)
+; 	at shadow.undertow$eval24895$fn$reify__24902$fn__25026$state_machine__12227__auto____25065.invoke(undertow.clj:468)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:978)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:977)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:982)
+; 	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:980)
+; 	at shadow.undertow$eval24895$fn$reify__24902$fn__25026.invoke(undertow.clj:468)
+; 	at clojure.lang.AFn.run(AFn.java:22)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+; 	at clojure.core.async.impl.concurrent$count
+cljs꞉app.subs꞉> 
+nil
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 37.09s)
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))
+([2 3])
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+([0 1] (1 1) (1 2))([0 1] (1 1) (1 2))
+([2 3])
+([3 4] (4 4))
+
+([2 3])
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 25.77s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 20.84s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+nil
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 13.75s)
+cljs꞉app.subs꞉> 
+nil
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 18.65s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 12.99s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 11.84s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.02s)
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 36.75s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.17s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0] [0 0 0 0 0]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 18.78s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 16.45s)
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))([0 1] (1 1) (1 2))
+([2 3])
+
+([2 3])
+([3 4] (4 4))([3 4] (4 4))
+
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.97s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+([0 1] (1 1) (1 2))
+([2 3])
+([3 4] (4 4))
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 3 warnings, 14.76s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:21:30
+; --------------------------------------------------------------------------------
+;   18 |         walk (fn [node]
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch? node)
+; ------------------------------------^-------------------------------------------
+;  Use of undeclared Var app.subs/branch?
+; --------------------------------------------------------------------------------
+;   22 |                         (mapcat walk (children node))))))]
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:33
+; --------------------------------------------------------------------------------
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch? node)
+;   22 |                         (mapcat walk (children node))))))]
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/walk
+; --------------------------------------------------------------------------------
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+;   26 |   (let [dimension (matrix/dimension image)
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #3 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:39
+; --------------------------------------------------------------------------------
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch? node)
+;   22 |                         (mapcat walk (children node))))))]
+; ---------------------------------------------^----------------------------------
+;  Use of undeclared Var app.subs/children
+; --------------------------------------------------------------------------------
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+;   26 |   (let [dimension (matrix/dimension image)
+; --------------------------------------------------------------------------------
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 2 warnings, 21.95s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:33
+; --------------------------------------------------------------------------------
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch-fn node)
+;   22 |                         (mapcat walk (children node))))))]
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/walk
+; --------------------------------------------------------------------------------
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+;   26 |   (let [dimension (matrix/dimension image)
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:39
+; --------------------------------------------------------------------------------
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch-fn node)
+;   22 |                         (mapcat walk (children node))))))]
+; ---------------------------------------------^----------------------------------
+;  Use of undeclared Var app.subs/children
+; --------------------------------------------------------------------------------
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+;   26 |   (let [dimension (matrix/dimension image)
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 1 warnings, 14.64s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:22:39
+; --------------------------------------------------------------------------------
+;   19 |                (lazy-seq
+;   20 |                 (cons node
+;   21 |                       (when (branch-fn node)
+;   22 |                         (mapcat walk (children node))))))]
+; ---------------------------------------------^----------------------------------
+;  Use of undeclared Var app.subs/children
+; --------------------------------------------------------------------------------
+;   23 |     (walk root)))
+;   24 | 
+;   25 | (defn scan [image]
+;   26 |   (let [dimension (matrix/dimension image)
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.03s)
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 1 warnings, 26.91s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:19:43
+; --------------------------------------------------------------------------------
+;   16 |                     
+;   17 |                     (= (get-in image c) 1))
+;   18 |         walk (fn walk [node]
+;   19 |                (swap! components assoc-in c count)
+; -------------------------------------------------^------------------------------
+;  Use of undeclared Var app.subs/c
+; --------------------------------------------------------------------------------
+;   20 |                (when (branch-fn node)
+;   21 |                  (mapcat walk (child-fn node))))]
+;   22 |     (walk root)))
+;   23 | 
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 1 warnings, 18.27s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:19:33
+; --------------------------------------------------------------------------------
+;   16 |                     (= (get-in image c) 1))
+;   17 |         walk (fn walk [c]
+;   18 |                (swap! components assoc-in c count)
+;   19 |                (when (branch-fn node)
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/node
+; --------------------------------------------------------------------------------
+;   20 |                  (mapcat walk (child-fn c))))]
+;   21 |     (walk root)))
+;   22 | 
+;   23 | (defn scan [image]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 1 warnings, 10.57s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:19:33
+; --------------------------------------------------------------------------------
+;   16 |                     (= (get-in image c) 1))
+;   17 |         walk (fn walk [c]
+;   18 |                (swap! components assoc-in c count)
+;   19 |                (when (branch-fn node)
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/node
+; --------------------------------------------------------------------------------
+;   20 |                  (mapcat walk (child-fn c))))]
+;   21 |     (walk root)))
+;   22 | 
+;   23 | (defn scan [image]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 1 warnings, 18.94s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/subs.cljs:19:33
+; --------------------------------------------------------------------------------
+;   16 |                     (= (get-in image c) 1))
+;   17 |         walk (fn walk [c]
+;   18 |                (swap! components assoc-in c count)
+;   19 |                (when (branch-fn node)
+; ---------------------------------------^----------------------------------------
+;  Use of undeclared Var app.subs/node
+; --------------------------------------------------------------------------------
+;   20 |                  (mapcat walk (child-fn c))))]
+;   21 |     (walk root)))
+;   22 | 
+;   23 | (defn scan [image]
+; --------------------------------------------------------------------------------
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 22.99s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.42s)
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+; No available JS runtime.
+; See https://shadow-cljs.github.io/docs/UsersGuide.html#repl-troubleshooting
+nil
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 17.82s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 2 3 0 0] [0 0 0 4 0] [0 0 0 0 5] [0 0 0 0 6]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 32.42s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 11.75s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+:repl/exception!
+; 
+; Execution error (RangeError) at (<cljs repl>:1).
+; Maximum call stack size exceeded
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 11.95s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 8.23s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 2.67s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 8.01s)
+cljs꞉app.subs꞉> 
+; Evaluating file: subs.cljs
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 10.83s)
+cljs꞉app.subs꞉> 
+nil
+; ------ WARNING - :undeclared-ns ------------------------------------------------
+;  Resource: <eval>:1:10
+;  No such namespace: re-frame, could not locate re_frame.cljs, re_frame.cljc, or JavaScript source providing "re-frame" (Please check that namespaces with dashes use underscores in the ClojureScript file name)
+; --------------------------------------------------------------------------------
+; 
+; 
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:10
+;  Use of undeclared Var re-frame/subscribe
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+#object[emmy.structure.Matrix "[[0 1 0 0 0] [0 1 1 0 0] [0 0 0 2 0] [0 0 0 0 3] [0 0 0 0 3]]"]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 12.38s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 10.19s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 1 warnings, 3.55s)
+; 
+; ------ WARNING #1 - :uix.linter/missing-key ------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:90:12
+; --------------------------------------------------------------------------------
+;   87 |        (for [column image]
+;   88 |          (uix/fn [{:keys []}]
+;   89 |            {:key column}
+;   90 |            ($ :button "G"))))))
+; ------------------^-------------------------------------------------------------
+;  UIx element is missing :key attribute, which is required
+; since the element is rendered as a list item.
+; Make sure to add a unique value for `:key` attribute derived from element's props,
+; do not use index.
+; --------------------------------------------------------------------------------
+;   91 | 
+;   92 | 
+;   93 | (defui app []
+;   94 |   (let [todos (hooks/use-subscribe [:app/todos])]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 1 warnings, 11.21s)
+; 
+; ------ WARNING #1 - :uix.linter/missing-key ------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:89:12
+; --------------------------------------------------------------------------------
+;   86 |     ($ :div
+;   87 |        (for [column image]
+;   88 |          (uix/fn [{:keys []}]
+;   89 |            ($ :button "G" {:key column}))))))
+; ------------------^-------------------------------------------------------------
+;  UIx element is missing :key attribute, which is required
+; since the element is rendered as a list item.
+; Make sure to add a unique value for `:key` attribute derived from element's props,
+; do not use index.
+; --------------------------------------------------------------------------------
+;   90 | 
+;   91 | 
+;   92 | (defui app []
+;   93 |   (let [todos (hooks/use-subscribe [:app/todos])]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 11.47s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.53s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.95s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 10.07s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.78s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 20.77s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.31s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 4.62s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:80:42
+; --------------------------------------------------------------------------------
+;   77 |         {:on-click #(on-remove-todo created-at)}
+;   78 |         "×")))
+;   79 | 
+;   80 | (defui pixel-view [{{:keys [row column]}}]
+; ------------------------------------------------^-------------------------------
+; app/core.cljs [line 80, col 42] The map literal starting with {:keys [...]} on line 80 column 20 contains 1 form(s). Map literals must contain an even number of forms.
+; 
+; --------------------------------------------------------------------------------
+;   81 |   (let [color (hooks/use-subscribe [:app/component-of-pixel row column])]))
+;   82 | 
+;   83 | (defui image-view []
+;   84 |   (let [image-dimension (hooks/use-subscribe [:app/image-dimension])]
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.16s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.49s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 1 warnings, 5.02s)
+; 
+; ------ WARNING #1 - :uix.linter/missing-key ------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:89:10
+; --------------------------------------------------------------------------------
+;   86 |     ($ :div
+;   87 |        (for [row (range image-dimension)
+;   88 |              column (range image-dimension)]
+;   89 |          ($ pixel-view)))))
+; ----------------^---------------------------------------------------------------
+;  UIx element is missing :key attribute, which is required
+; since the element is rendered as a list item.
+; Make sure to add a unique value for `:key` attribute derived from element's props,
+; do not use index.
+; --------------------------------------------------------------------------------
+;   90 | 
+;   91 | 
+;   92 | (defui app []
+;   93 |   (let [todos (hooks/use-subscribe [:app/todos])]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 1 warnings, 2.90s)
+; 
+; ------ WARNING #1 - :uix.linter/missing-key ------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:89:24
+; --------------------------------------------------------------------------------
+;   86 |     ($ :div
+;   87 |        (for [row (range image-dimension)
+;   88 |              column (range image-dimension)]
+;   89 |          ($ pixel-view {:row row :column column})))))
+; ------------------------------^-------------------------------------------------
+;  UIx element is missing :key attribute, which is required
+; since the element is rendered as a list item.
+; Make sure to add a unique value for `:key` attribute derived from element's props,
+; do not use index.
+; --------------------------------------------------------------------------------
+;   90 | 
+;   91 | 
+;   92 | (defui app []
+;   93 |   (let [todos (hooks/use-subscribe [:app/todos])]
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.49s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.89s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.62s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.50s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.63s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.73s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.59s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.28s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.65s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.50s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.96s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.09s)
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.63s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.80s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.32s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.18s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.41s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.79s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/handlers.cljs:39:55
+; --------------------------------------------------------------------------------
+;   36 | (rf/reg-event-db :event/toggle-pixel
+;   37 |                  [store-todos]
+;   38 |                  (fn [db [_ row column]]
+;   39 |                    (update-in db [row column] (fn [n] (zero? n 1 0)))))
+; -------------------------------------------------------------^------------------
+; null
+; Wrong number of args (3) passed to: cljs.core/zero?
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.29s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 7.00s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.01s)
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+nil
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.72s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.18s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 1.74s)
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.64s)
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+#object[re_frame$subs$subs_handler_fn]
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.49s)
+cljs꞉app.subs꞉> 
+{:todos {},
+ :image [[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]],
+ 4 {4 0, 3 0, 2 0, 1 0, 0 0},
+ 3 {4 0, 3 0, 2 1, 1 0, 0 0}}
+cljs꞉app.subs꞉> 
+{:todos {},
+ :image [[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]],
+ 4 {4 0, 3 0, 2 0, 1 0, 0 0},
+ 3 {4 0, 3 0, 2 1, 1 0, 0 0},
+ 0 {4 0}}
+cljs꞉app.subs꞉> 
+{:todos {},
+ :image [[0 1 0 0 0] [0 1 1 0 0] [0 0 0 1 0] [0 0 0 0 1] [0 0 0 0 1]],
+ 4 {4 0, 3 0, 2 0, 1 0, 0 0},
+ 3 {4 0, 3 0, 2 1, 1 0, 0 0},
+ 0 {4 0, 0 0, 2 0}}
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.94s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.05s)
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.14s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 9.83s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.31s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 7.89s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.67s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 9.30s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.68s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 6.45s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.69s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 2.75s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 9.17s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.70s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.73s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 9.45s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.45s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.40s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.60s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.06s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.05s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:30:29
+; --------------------------------------------------------------------------------
+;   27 |     ($ :button
+;   28 |        {:on-click #(rf/dispatch [:event/toggle-pixel row column])
+;   29 |         :style {:background-color (get colors color)
+;   30 |                 :height 10px}}
+; -----------------------------------^--------------------------------------------
+; app/core.cljs [line 30, col 29] Invalid number: 10px.
+; 
+; --------------------------------------------------------------------------------
+;   31 |        "")))
+;   32 | 
+;   33 | (defui row-view [{:keys [row]}]
+;   34 |   (let [image-dimension (hooks/use-subscribe [:app/image-dimension])]
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.83s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 0.94s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 0.93s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 0.92s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:407:1
+; --------------------------------------------------------------------------------
+;  404 | 
+;  405 | (defn ^:export init []
+;  406 |   (render))
+;  407 | 
+; -------^------------------------------------------------------------------------
+; app/core.cljs [line 407, col 1] Unexpected EOF reading string starting ")))
+; 
+; (defn render []
+;   (rf/dispatch-sync [:app/init-db app.db/default-db])
+;   (uix.dom/render-root ($ app) root))
+; 
+; (defn ^:export init []
+;   (render))
+; .
+; 
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:408:1
+; --------------------------------------------------------------------------------
+;  405 | 
+;  406 | (defn ^:export init []
+;  407 |   (render))
+;  408 | 
+; -------^------------------------------------------------------------------------
+; app/core.cljs [line 408, col 1] Unexpected EOF reading string starting ")))
+; 
+; (defn render []
+;   (rf/dispatch-sync [:app/init-db app.db/default-db])
+;   (uix.dom/render-root ($ app) root))
+; 
+; (defn ^:export init []
+;   (render))
+; .
+; 
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build failure:
+; ------ ERROR -------------------------------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:408:1
+; --------------------------------------------------------------------------------
+;  405 | 
+;  406 | (defn ^:export init []
+;  407 |   (render))
+;  408 | 
+; -------^------------------------------------------------------------------------
+; app/core.cljs [line 408, col 1] Unexpected EOF reading string starting ")))
+; 
+; (defn render []
+;   (rf/dispatch-sync [:app/init-db app.db/default-db])
+;   (uix.dom/render-root ($ app) root))
+; 
+; (defn ^:export init []
+;   (render))
+; .
+; 
+; --------------------------------------------------------------------------------
+; 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.20s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.90s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.37s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 7.43s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 2 warnings, 5.74s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:30:40
+; --------------------------------------------------------------------------------
+;   27 |   (let [color (hooks/use-subscribe [:app/component-of-pixel row column])]
+;   28 |     ($ :button
+;   29 |        {:on-click #(rf/dispatch [:event/toggle-pixel row column])
+;   30 |         :style {:background-color (get colors color)
+; ----------------------------------------------^---------------------------------
+;  Use of undeclared Var app.core/colors
+; --------------------------------------------------------------------------------
+;   31 |                 :color (get colors color)
+;   32 |                 :height 20
+;   33 |                 :width 20}}
+;   34 |        "X")))
+; --------------------------------------------------------------------------------
+; 
+; ------ WARNING #2 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:31:29
+; --------------------------------------------------------------------------------
+;   28 |     ($ :button
+;   29 |        {:on-click #(rf/dispatch [:event/toggle-pixel row column])
+;   30 |         :style {:background-color (get colors color)
+;   31 |                 :color (get colors color)
+; -----------------------------------^--------------------------------------------
+;  Use of undeclared Var app.core/colors
+; --------------------------------------------------------------------------------
+;   32 |                 :height 20
+;   33 |                 :width 20}}
+;   34 |        "X")))
+;   35 | 
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.02s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 1 warnings, 3.15s)
+; 
+; ------ WARNING #1 - :undeclared-var --------------------------------------------
+;  File: /home/danielcraig/Repos/flood-fill-technic-parts/src/app/core.cljs:372:40
+; --------------------------------------------------------------------------------
+;  369 |   (let [color (hooks/use-subscribe [:app/component-of-pixel row column])]
+;  370 |     ($ :button
+;  371 |        {:on-click #(rf/dispatch [:event/toggle-pixel row column])
+;  372 |         :style {:background-color (get colors color)
+; ----------------------------------------------^---------------------------------
+;  Use of undeclared Var app.core/colors
+; --------------------------------------------------------------------------------
+;  373 |                 :height 20
+;  374 |                 :width 20}}
+;  375 |        "")))
+;  376 | 
+; --------------------------------------------------------------------------------
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 1.90s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 4.96s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 8.04s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 7.38s)
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.67s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.27s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 7.13s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 21.88s)
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 6.78s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 2 compiled, 0 warnings, 5.97s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 2.97s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 3.42s)
+cljs꞉app.subs꞉> 
+; [:app] Compiling ...
+cljs꞉app.subs꞉> 
+; [:app] Build completed. (416 files, 1 compiled, 0 warnings, 5.86s)
+cljs꞉app.subs꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: deps.edn...
+;   The Calva Connection Log might have more connection progress information.
+; Cljs builds started
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+nil
+cljs꞉user꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: deps.edn...
+;   The Calva Connection Log might have more connection progress information.
+; Cljs builds started
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+nil
+cljs꞉user꞉> 
