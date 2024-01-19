@@ -10,7 +10,7 @@
    [app.db]
    [re-frame.core :as rf]))
 
-(def colors ["#0041C2" "#2554C7" "#1569C7"
+(def colors ["white" "#0041C2" "#2554C7" "#1569C7"
              "#2B60DE" "#1F45FC" "#6960EC"
              "#736AFF" "#357EC7" "#368BC1"
              "#488AC7" "#3090C7" "#659EC7"
